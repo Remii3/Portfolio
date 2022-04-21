@@ -1,0 +1,54 @@
+.about {
+  padding: 6rem 0 0;
+
+  .about_headline {
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    .headline_title {
+      font-size: 3rem;
+      padding-bottom: 1rem;
+    }
+    .headline_image {
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  .about_informationSpace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    .informationSpace_me {
+      padding: 10px;
+      width: 100%;
+      .me_contact {
+        color: blue;
+      }
+    }
+    .informationSpace_techStack {
+      padding: 10px;
+      .techStack_item {
+        display: inline-block;
+        padding: 0.25rem 0.5rem;
+        margin: 0.25rem 0.5rem 0.25rem 0;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+    }
+    @media screen and (min-width: 768px) {
+      .informationSpace_techStack,
+      .informationSpace_me {
+        max-width: 50%;
+      }
+    }
+  }
+}

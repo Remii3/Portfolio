@@ -1,0 +1,52 @@
+.about {
+  padding: 6rem 0 0;
+}
+.about .about_headline {
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+.about .about_headline .headline_title {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+.about .about_headline .headline_image {
+  height: 100px;
+  width: 100px;
+}
+.about .about_informationSpace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .about .about_informationSpace {
+    flex-direction: row;
+  }
+}
+.about .about_informationSpace .informationSpace_me {
+  padding: 10px;
+  width: 100%;
+}
+.about .about_informationSpace .informationSpace_me .me_contact {
+  color: blue;
+}
+.about .about_informationSpace .informationSpace_techStack {
+  padding: 10px;
+}
+.about .about_informationSpace .informationSpace_techStack .techStack_item {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem 0.5rem 0.25rem 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+@media screen and (min-width: 768px) {
+  .about .about_informationSpace .informationSpace_techStack,
+.about .about_informationSpace .informationSpace_me {
+    max-width: 50%;
+  }
+}/*# sourceMappingURL=about.css.map */
