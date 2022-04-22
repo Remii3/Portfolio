@@ -1,0 +1,39 @@
+.contact {
+  padding: 6rem 0;
+
+  .contact_title {
+    font-size: 3rem;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .contact_secTitle {
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .contact_form {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .form_input {
+      width: 100%;
+    }
+    .form_buttonSpace {
+      width: 100%;
+      display: flex;
+      justify-content: right;
+
+      .buttonSpace_button {
+        all: unset;
+        border: 1px solid black;
+        padding: 1rem 3rem;
+        cursor: pointer;
+      }
+    }
+  }
+}

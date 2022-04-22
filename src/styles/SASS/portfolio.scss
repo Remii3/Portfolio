@@ -1,0 +1,43 @@
+.portfolio {
+  padding: 6rem 0;
+
+  .portfolio_title {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+  .portfolio_projects {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .projects_categoriesSpace {
+      display: flex;
+      justify-content: space-around;
+      .categoriesSpace_category {
+        margin: 0 25%;
+        cursor: pointer;
+      }
+    }
+    .projects_linksSpace {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #af3;
+      width: 100%;
+      .linksSpace_link {
+        width: 20%;
+        background-color: blue;
+        a {
+          text-decoration: none;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
