@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Remii3/Portfolio/static/css/main.539c2934.css",
+    "main.js": "/Remii3/Portfolio/static/js/main.91b74c38.js",
+    "index.html": "/Remii3/Portfolio/index.html",
+    "main.539c2934.css.map": "/Remii3/Portfolio/static/css/main.539c2934.css.map",
+    "main.91b74c38.js.map": "/Remii3/Portfolio/static/js/main.91b74c38.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.539c2934.css",
+    "static/js/main.91b74c38.js"
+  ]
+}
