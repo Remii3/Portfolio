@@ -1,6 +1,11 @@
-import React from "react";
 import "../styles/SASS/home.scss";
+
 const Home = () => {
+  const moveToAbout = () => {
+    const aboutSection = document.querySelector(".about");
+    aboutSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <section className="home">
       <p id="stars"></p>
@@ -14,7 +19,9 @@ const Home = () => {
           </p>
           <p className="title_secondLine">I'm a front-end web developer.</p>
         </div>
-        <button className="titleSpace_button">Show more</button>
+        <button className="titleSpace_button" onClick={() => moveToAbout()}>
+          Show more
+        </button>
       </div>
     </section>
   );

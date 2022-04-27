@@ -1,0 +1,1 @@
+increase height of each section so that it takes full window height

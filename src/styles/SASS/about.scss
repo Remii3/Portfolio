@@ -1,13 +1,20 @@
+@import "./_variables";
+
 .about {
   padding: 6rem 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
 
   .about_headline {
-    max-width: 1200px;
     text-align: center;
-    margin: 0 auto;
     .headline_title {
       font-size: 3.3rem;
-      color: #252934;
+      color: $main-color;
     }
     .headline_title::after {
       content: " ";
@@ -15,12 +22,16 @@
       margin: 0.5rem auto;
       width: 150px;
       height: 4px;
-      background-color: #252934;
+      background-color: $main-color;
     }
     .headline_image {
-      height: 100px;
-      width: 100px;
-      margin-top: 5rem;
+      max-height: 250px;
+      max-width: 250px;
+      width: 50vw;
+      height: 50vw;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 4rem 0 2rem;
     }
   }
 
@@ -29,7 +40,6 @@
     flex-direction: column;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
     text-align: center;
 
     @media screen and (min-width: 768px) {
@@ -37,20 +47,45 @@
     }
 
     .informationSpace_me {
-      padding: 10px;
-      width: 100%;
+      padding: 1.5rem 1rem;
+      // width: 100%;
+      .me_title {
+        font-size: $medium-font;
+        padding: 0.5rem 0;
+      }
+      .me_description {
+        font-size: $small-font;
+        padding: 0.5rem 0;
+      }
       .me_contact {
-        color: blue;
+        color: #3c99dc;
+        padding: 0.5rem 0;
+        font-size: $small-font;
+        font-weight: 500;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
     .informationSpace_techStack {
       padding: 10px;
-      .techStack_item {
-        display: inline-block;
-        padding: 0.25rem 0.5rem;
-        margin: 0.25rem 0.5rem 0.25rem 0;
-        border-radius: 5px;
-        background-color: rgba(0, 0, 0, 0.4);
+      .techStack_title {
+        font-size: $medium-font;
+        padding: 0.5rem;
+      }
+      .techStack_itemSpace {
+        padding: 0.5rem 1rem;
+        text-align: left;
+
+        .itemSpace_item {
+          display: inline-block;
+          padding: 0.25rem 0.5rem;
+          margin: 0.25rem 0.5rem 0.25rem 0;
+          border-radius: 5px;
+          font-size: $small-font;
+          background-color: rgba(0, 0, 0, 0.4);
+        }
       }
     }
     @media screen and (min-width: 768px) {

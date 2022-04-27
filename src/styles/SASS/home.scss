@@ -1,50 +1,52 @@
+@import "./_variables";
 .home {
   height: 100vh;
   width: 100%;
-  z-index: 3;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background-image: radial-gradient(
+    ellipse at bottom,
+    #1b2735 0%,
+    #090a0f 100%
+  );
   overflow: hidden;
-}
 
-.home_titleSpace {
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  top: 25%;
-}
+  .home_titleSpace {
+    margin: 0 auto;
+    position: relative;
+    top: 25%;
 
-.titleSpace_title {
-  font-size: 2.5rem;
-  font-weight: 400;
-  width: 100%;
-  color: white;
-  text-align: center;
+    .titleSpace_title {
+      font-size: $big-font;
+      color: #fff;
+      text-align: center;
 
-  .title_firstLine,
-  .title_secondLine {
-    margin: 1rem 0.25rem;
+      .title_firstLine,
+      .title_secondLine {
+        margin: 1rem 0;
 
-    .firstLine_name {
-      color: purple;
-      font-weight: 600;
+        .firstLine_name {
+          color: $decorative-color;
+          font-weight: 600;
+        }
+      }
     }
-  }
-}
 
-.titleSpace_button {
-  color: #fff;
-  font-size: 1.4rem;
-  font-weight: 500;
-  display: block;
-  padding: 0.7rem 1.6rem;
-  border: #fff 0.125rem solid;
-  margin: 2rem auto;
-  background-color: rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: all 0.3s ease;
-  &:hover {
-    background-color: #fff;
-    color: #111;
+    .titleSpace_button {
+      display: block;
+      margin: 2rem auto;
+      padding: 0.8rem 1.6rem;
+      font-size: $medium-font;
+      font-weight: 500;
+      border: #fff 0.125rem solid;
+      cursor: pointer;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $secondary-color;
+        border-color: $secondary-color;
+      }
+    }
   }
 }
 

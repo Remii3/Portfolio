@@ -1,11 +1,40 @@
+@import "./_variables";
 .footer {
-  padding: 6rem 0 0;
+  background-color: #1b242f;
+  width: 100%;
+  min-height: 15vh;
+  text-align: center;
+
   .footer_linksSpace {
-    text-align: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
+
+    .linksSpace_link {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 1rem;
+      padding: 0rem 1rem;
+      background-color: rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
+      color: transparent;
+
+      &:hover {
+        background-color: $secondary-color;
+        transform: scale(0.8);
+      }
+
+      i {
+        margin: 1rem 0;
+        font-size: $medium-font;
+        color: #fff;
+      }
+    }
   }
+
   .footer_copyright {
     text-align: center;
-    padding: 0.5rem 0;
+    font-size: $smallest-font;
+    padding-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.2);
   }
 }

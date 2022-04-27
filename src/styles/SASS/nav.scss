@@ -1,39 +1,53 @@
+@import "./_variables";
 .navbar {
-  background: radial-gradient(ellipse at top, #1b2735 0%, #252934 100%);
-  width: 100%;
-}
-.navbar_insideSpace {
-  max-width: 1200px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 20px;
-  margin: 0 auto;
-}
+  height: 50px;
 
-.menu_list {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-  .list_link {
-    margin: 0 20px;
+  .navbar_container {
+    background: radial-gradient(ellipse at top, #1b242f 0%, #252934 100%);
+    width: 100%;
+    position: relative;
+    z-index: 4;
 
-    text-decoration: none;
-    color: #fff;
-    transition: all 0.4s ease;
-    font-weight: 500;
-
-    cursor: pointer;
+    .navbar_insideSpace {
+      max-width: 1200px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15.5px 20px;
+      margin: 0 auto;
+    }
   }
-  .list_link:hover {
-    color: purple;
+
+  .menu_list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+
+    .list_link {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.3s ease;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .list_link:hover {
+      color: $decorative-color;
+    }
   }
 }
 
 #navbar_toggler,
 .navbar .navbar_burgerSpace {
   display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 @media screen and (max-width: 600px) {

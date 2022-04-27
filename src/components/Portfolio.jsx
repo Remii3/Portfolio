@@ -1,6 +1,14 @@
 import "../styles/SASS/portfolio.scss";
 import projectsFilter from "../functions/projectsFilter";
 import { useState } from "react";
+import calculatorImage from "../assets/img/calculator_image.png";
+import netflixImage from "../assets/img/netflix_image.png";
+import todoImage from "../assets/img/todo_image.png";
+import weatherImage from "../assets/img/weather_image.png";
+import huluImage from "../assets/img/hulu_image.png";
+import dishesFormImage from "../assets/img/dishForm_image.png";
+import foodDeliveryImage from "../assets/img/foodDelivery_image.png";
+import oneHandedBanditImage from "../assets/img/oneHandedBandit_image.png";
 
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState({
@@ -12,17 +20,46 @@ const Portfolio = () => {
       { id: 3, name: "JAVASCRIPT" },
     ],
   });
+
   const listOfProjects = [
-    { img: "", link: "https://remii3.github.io/Todo/", tech: "REACT" },
     {
-      img: "",
+      img: todoImage,
+      link: "https://remii3.github.io/Todo/",
+      tech: "REACT",
+    },
+    {
+      img: weatherImage,
       link: "https://remii3.github.io/WeatherForecast/",
       tech: "REACT",
     },
-    { img: "", link: "https://netflix-database-c4dbd.web.app", tech: "REACT" },
     {
-      img: "",
+      img: netflixImage,
+      link: "https://netflix-database-c4dbd.web.app",
+      tech: "REACT",
+    },
+    {
+      img: calculatorImage,
       link: "https://remii3.github.io/Calculator/",
+      tech: "JAVASCRIPT",
+    },
+    {
+      img: huluImage,
+      link: "https://hulu-copy-bxidmyla9-remii3.vercel.app/",
+      tech: "NEXT",
+    },
+    {
+      img: dishesFormImage,
+      link: "https://remii3.github.io/Dishes-form/",
+      tech: "REACT",
+    },
+    {
+      img: foodDeliveryImage,
+      link: "https://remii3.github.io/food-delivery/",
+      tech: "REACT",
+    },
+    {
+      img: oneHandedBanditImage,
+      link: "https://remii3.github.io/One-handed-bandit/",
       tech: "JAVASCRIPT",
     },
   ];
@@ -42,7 +79,6 @@ const Portfolio = () => {
   return (
     <section className="portfolio">
       <h1 className="portfolio_title">PROJECTS</h1>
-
       <div className="portfolio_projects">
         <div className="projects_categoriesSpace">
           {selectedCategory.categories.map((item, index) => (
@@ -61,8 +97,9 @@ const Portfolio = () => {
           {projectsFilter(listOfProjects, selectedCategory.activeObject).map(
             (item, index) => (
               <div className="linksSpace_link" key={index}>
-                <a href={item.link}>
-                  <img src={item.img} alt="photo_link" />
+                <img src={item.img} alt="photo_link" className="link_image" />
+                <a className="link_photoLink" href={item.link}>
+                  Learn more
                 </a>
               </div>
             )

@@ -2,15 +2,18 @@ import "../styles/SASS/footer.scss";
 
 const Footer = () => {
   const socialMediaLinks = [
-    { img: "github", link: "https://github.com/Remii3" },
-    { img: "linkedIn", link: "" },
+    { img: "fa-brands fa-github", link: "https://github.com/Remii3" },
+    {
+      img: "fa-brands fa-linkedin",
+      link: "https://www.linkedin.com/in/remigiusz-wo%C5%BAniak-1244a5230/",
+    },
   ];
   return (
     <section className="footer">
       <div className="footer_linksSpace">
         {socialMediaLinks.map((item, index) => (
           <a className="linksSpace_link" href={item.link} key={index}>
-            <img src={item.img} alt="photo_link" />
+            <i className={item.img} />
           </a>
         ))}
       </div>
