@@ -1,13 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.51812ad6.css",
-    "main.js": "/Portfolio/static/js/main.91b74c38.js",
+    "main.css": "/Portfolio/static/css/main.80e26439.css",
+    "main.js": "/Portfolio/static/js/main.60865fea.js",
+    "static/media/netflix_image.png": "/Portfolio/static/media/netflix_image.17bb3e8c412a8f316232.png",
+    "static/media/hulu_image.png": "/Portfolio/static/media/hulu_image.59ad9ff4a6c0eed4a36c.png",
+    "static/media/foodDelivery_image.png": "/Portfolio/static/media/foodDelivery_image.814ac93f61817f42d87e.png",
+    "static/media/weather_image.png": "/Portfolio/static/media/weather_image.7333e73349ea440769d8.png",
+    "static/media/IMG_3354 ret kadr.jpg": "/Portfolio/static/media/IMG_3354 ret kadr.571782154b3998bd0b70.jpg",
+    "static/media/oneHandedBandit_image.png": "/Portfolio/static/media/oneHandedBandit_image.16be18f670054d9bf29b.png",
+    "static/media/todo_image.png": "/Portfolio/static/media/todo_image.179333aee5a7d40f4fa6.png",
+    "static/media/calculator_image.png": "/Portfolio/static/media/calculator_image.af03721a777f1566db73.png",
+    "static/media/dishForm_image.png": "/Portfolio/static/media/dishForm_image.c139759fac724ab766ed.png",
     "index.html": "/Portfolio/index.html",
-    "main.51812ad6.css.map": "/Portfolio/static/css/main.51812ad6.css.map",
-    "main.91b74c38.js.map": "/Portfolio/static/js/main.91b74c38.js.map"
+    "main.80e26439.css.map": "/Portfolio/static/css/main.80e26439.css.map",
+    "main.60865fea.js.map": "/Portfolio/static/js/main.60865fea.js.map"
   },
   "entrypoints": [
-    "static/css/main.51812ad6.css",
-    "static/js/main.91b74c38.js"
+    "static/css/main.80e26439.css",
+    "static/js/main.60865fea.js"
   ]
 }
