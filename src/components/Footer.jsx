@@ -2,8 +2,8 @@ import "../styles/SASS/footer.scss";
 
 const Footer = () => {
   const socialMediaLinks = [
-    { img: "", link: "" },
-    { img: "", link: "" },
+    { img: "github", link: "https://github.com/Remii3" },
+    { img: "linkedIn", link: "" },
   ];
   return (
     <section className="footer">

@@ -3,8 +3,16 @@ import projectsFilter from "../functions/projectsFilter";
 import { useState } from "react";
 
 const Portfolio = () => {
-  const [selectedFilter, setSelectedFilter] = useState("ALL");
-  const DUMMY_PROJECTS = [
+  const [selectedCategory, setSelectedCategory] = useState({
+    activeObject: 0,
+    categories: [
+      { id: 0, name: "ALL" },
+      { id: 1, name: "NEXT" },
+      { id: 2, name: "REACT" },
+      { id: 3, name: "JAVASCRIPT" },
+    ],
+  });
+  const listOfProjects = [
     { img: "", link: "https://remii3.github.io/Todo/", tech: "REACT" },
     {
       img: "",
@@ -19,36 +27,46 @@ const Portfolio = () => {
     },
   ];
 
-  const categories = ["ALL", "NEXT", "REACT", "JAVASCRIPT"];
+  const selectCategoryHandler = (id) => {
+    setSelectedCategory({ ...selectedCategory, activeObject: id });
+  };
 
-  const selectCategoryHandler = (e) => {
-    setSelectedFilter(e.target.innerText);
+  const selectCategoryStylesHandler = (id) => {
+    if (selectedCategory.activeObject === id) {
+      return "categoriesSpace_category-active";
+    } else {
+      return "";
+    }
   };
 
   return (
     <section className="portfolio">
-      <h1 className="portfolio_title">Projects</h1>
+      <h1 className="portfolio_title">PROJECTS</h1>
 
       <div className="portfolio_projects">
         <div className="projects_categoriesSpace">
-          {categories.map((item, index) => (
+          {selectedCategory.categories.map((item, index) => (
             <span
-              className="categoriesSpace_category"
+              className={`categoriesSpace_category ${selectCategoryStylesHandler(
+                item.id
+              )}`}
               key={index}
-              onClick={(e) => selectCategoryHandler(e)}
+              onClick={() => selectCategoryHandler(item.id)}
             >
-              {item}
+              {item.name}
             </span>
           ))}
         </div>
         <div className="projects_linksSpace">
-          {projectsFilter(DUMMY_PROJECTS, selectedFilter).map((item, index) => (
-            <div className="linksSpace_link" key={index}>
-              <a href={item.link}>
-                <img src={item.img} alt="photo_link" />
-              </a>
-            </div>
-          ))}
+          {projectsFilter(listOfProjects, selectedCategory.activeObject).map(
+            (item, index) => (
+              <div className="linksSpace_link" key={index}>
+                <a href={item.link}>
+                  <img src={item.img} alt="photo_link" />
+                </a>
+              </div>
+            )
+          )}
         </div>
       </div>
     </section>

@@ -5,29 +5,71 @@
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.3rem;
     padding-bottom: 1rem;
+    color: #252934;
   }
+
+  .portfolio_title::after {
+    content: " ";
+    display: block;
+    margin: 0.5rem auto;
+    width: 150px;
+    height: 4px;
+    background-color: #252934;
+  }
+
   .portfolio_projects {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 5rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+
     .projects_categoriesSpace {
       display: flex;
       justify-content: space-around;
+
       .categoriesSpace_category {
         margin: 0 25%;
         cursor: pointer;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+      }
+      .categoriesSpace_category ::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%) scaleX(0);
+        transform-origin: 50% 50%;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.8);
+        transition: transform 250ms;
+      }
+      .categoriesSpace_category-active {
+        background-color: blue;
+      }
+      .categoriesSpace_category-active::after {
+        transform: translateX(-50%) scaleX(1);
+      }
+      @media screen and (max-width: 600px) {
+        .categoriesSpace_category {
+          margin: 0 7%;
+
+          font-size: 0.8rem;
+        }
       }
     }
+
     .projects_linksSpace {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       background-color: #af3;
       width: 100%;
+      margin: 2rem 0;
       .linksSpace_link {
         width: 20%;
         background-color: blue;

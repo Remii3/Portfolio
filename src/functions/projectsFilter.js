@@ -1,16 +1,16 @@
-const projectsFilter = (projects, selectedFilter) => {
-  switch (selectedFilter) {
-    case "ALL":
+const projectsFilter = (projects, selectedCategory) => {
+  switch (selectedCategory) {
+    case "0":
       return projects;
-    case "NEXT":
+    case "1":
       return projects.filter((item) => {
         return item.tech === "NEXT";
       });
-    case "REACT":
+    case "2":
       return projects.filter((item) => {
         return item.tech === "REACT";
       });
-    case "JAVASCRIPT":
+    case "3":
       return projects.filter((item) => {
         return item.tech === "JAVASCRIPT";
       });

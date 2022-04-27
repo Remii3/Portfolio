@@ -6,12 +6,21 @@
     text-align: center;
     margin: 0 auto;
     .headline_title {
-      font-size: 3rem;
-      padding-bottom: 1rem;
+      font-size: 3.3rem;
+      color: #252934;
+    }
+    .headline_title::after {
+      content: " ";
+      display: block;
+      margin: 0.5rem auto;
+      width: 150px;
+      height: 4px;
+      background-color: #252934;
     }
     .headline_image {
       height: 100px;
       width: 100px;
+      margin-top: 5rem;
     }
   }
 

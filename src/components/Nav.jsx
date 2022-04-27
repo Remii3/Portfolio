@@ -18,7 +18,7 @@ const Nav = () => {
     <nav className="navbar">
       <div className="navbar_insideSpace">
         <button
-          className="hamburger hamburger--boring  navbar_burgerSpace"
+          className="hamburger hamburger--boring navbar_burgerSpace "
           type="button"
           onClick={() => burgerClickHandler()}
         >

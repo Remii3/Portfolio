@@ -1,7 +1,5 @@
 .navbar {
-  // background-color: #009999;
-  // background-color: #090a0f;
-  background: linear-gradient(to bottom, #1b2735 0%, #090a0f 100%);
+  background: radial-gradient(ellipse at top, #1b2735 0%, #252934 100%);
   width: 100%;
 }
 .navbar_insideSpace {
@@ -62,7 +60,7 @@
     }
   }
 
-  #navbar_toggler:checked ~ .navbar_menu {
+  .is-active ~ .navbar_menu {
     max-height: 100%;
   }
 }
