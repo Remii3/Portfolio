@@ -30,6 +30,11 @@ const Contact = () => {
           placeholder="Your message"
           rows={10}
         ></textarea>
+        <input
+          type="hidden"
+          name="_next"
+          value="https://remii3.github.io/Portfolio/"
+        ></input>
         <div className="form_buttonSpace">
           <button type="submit" className="buttonSpace_button">
             Submit
