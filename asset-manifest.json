@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.6dd0e2ef.css",
-    "main.js": "/Portfolio/static/js/main.13d5b5d4.js",
+    "main.css": "/Portfolio/static/css/main.0120c647.css",
+    "main.js": "/Portfolio/static/js/main.4471f506.js",
     "static/media/netflix_image.png": "/Portfolio/static/media/netflix_image.17bb3e8c412a8f316232.png",
     "static/media/hulu_image.png": "/Portfolio/static/media/hulu_image.59ad9ff4a6c0eed4a36c.png",
     "static/media/foodDelivery_image.png": "/Portfolio/static/media/foodDelivery_image.814ac93f61817f42d87e.png",
@@ -12,11 +12,11 @@
     "static/media/calculator_image.png": "/Portfolio/static/media/calculator_image.af03721a777f1566db73.png",
     "static/media/dishForm_image.png": "/Portfolio/static/media/dishForm_image.c139759fac724ab766ed.png",
     "index.html": "/Portfolio/index.html",
-    "main.6dd0e2ef.css.map": "/Portfolio/static/css/main.6dd0e2ef.css.map",
-    "main.13d5b5d4.js.map": "/Portfolio/static/js/main.13d5b5d4.js.map"
+    "main.0120c647.css.map": "/Portfolio/static/css/main.0120c647.css.map",
+    "main.4471f506.js.map": "/Portfolio/static/js/main.4471f506.js.map"
   },
   "entrypoints": [
-    "static/css/main.6dd0e2ef.css",
-    "static/js/main.13d5b5d4.js"
+    "static/css/main.0120c647.css",
+    "static/js/main.4471f506.js"
   ]
 }
