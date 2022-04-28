@@ -16,12 +16,14 @@ const Contact = () => {
           name="name"
           className="form_input"
           placeholder="Name"
+          required
         />
         <input
           type="email"
           name="email"
           className="form_input"
           placeholder="Email"
+          required
         />
         <textarea
           type="text"
@@ -29,6 +31,7 @@ const Contact = () => {
           className="form_input"
           placeholder="Your message"
           rows={10}
+          required
         ></textarea>
         <input
           type="hidden"
