@@ -4,7 +4,7 @@ const Contact = () => {
     <section className="contact">
       <h1 className="contact_title">CONTACT</h1>
       <p className="contact_secTitle">
-        If you have any questions please contact me
+        If you have any questions please contact me.
       </p>
       <form
         action="https://formsubmit.co/remek778790@gmail.com"

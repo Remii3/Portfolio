@@ -38,23 +38,30 @@
       align-items: center;
 
       .categoriesSpace_category {
-        margin: 0 3rem;
+        margin: 0 1rem;
+        padding: 10px 1vw;
         cursor: pointer;
         font-size: $small-font;
-        transition: all 0.3s ease;
+        // transition: all 0.3s ease;
         position: relative;
+        display: inline-block;
 
         &::after {
-          content: " ";
-          position: absolute;
-          left: 50%;
+          background: none repeat scroll 0 0 transparent;
+          content: "";
           bottom: 0;
-          transform: translateX(-50%) scaleX(0);
-          transform-origin: 50% 50%;
+          display: block;
+          height: 3px;
+          left: 50%;
+          position: absolute;
+          background-color: $decorative-color;
+          width: 0;
+          transition: width 0.3s ease, left 0.3s ease;
+        }
+
+        &:hover::after {
           width: 100%;
-          height: 1px;
-          background-color: rgba(255, 255, 255, 0.8);
-          transition: transform 250ms;
+          left: 0;
         }
 
         @media screen and (max-width: 600px) {
@@ -63,39 +70,39 @@
         }
       }
 
-      /// add animation on activated category
-
-      .categoriesSpace_category-active {
-        background-color: blue;
-      }
-
       .categoriesSpace_category-active::after {
-        transform: translateX(-50%) scaleX(1);
+        width: 100%;
+        left: 0;
       }
-
-      //////////
     }
 
     .projects_linksSpace {
-      display: grid;
+      display: flex;
       margin: 2rem 0;
       gap: 0;
-      grid-template-columns: repeat(1, minmax(100%, 1fr));
-      @media screen and (min-width: 600px) {
-        grid-template-columns: repeat(2, minmax(50%, 1fr));
-      }
-      @media screen and (min-width: 992px) {
-        grid-template-columns: repeat(3, minmax(calc(100% / 3), 1fr));
-      }
+      min-height: 755px;
+      flex-wrap: wrap;
+
       .linksSpace_link {
         position: relative;
+        max-height: 251.52px;
+
+        @media screen and (min-width: 600px) {
+          width: 50%;
+        }
+
+        @media screen and (min-width: 992px) {
+          width: calc(100% / 3);
+        }
 
         &:hover .link_image {
           opacity: 0.4;
         }
+
         &:hover .link_photoLink {
           opacity: 1;
         }
+
         .link_image {
           width: 100%;
           height: 100%;

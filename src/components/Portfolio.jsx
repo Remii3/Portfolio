@@ -20,7 +20,6 @@ const Portfolio = () => {
       { id: 3, name: "JAVASCRIPT" },
     ],
   });
-
   const listOfProjects = [
     {
       img: todoImage,

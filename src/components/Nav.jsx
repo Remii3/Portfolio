@@ -20,7 +20,6 @@ const Nav = () => {
   useEffect(() => {
     window.addEventListener("scroll", stickyNavbar);
     setNavbarPosition(document.querySelector(".navbar").offsetTop);
-    console.log(document.querySelector(".navbar").offsetTop);
 
     return () => {
       window.removeEventListener("scroll", stickyNavbar);
