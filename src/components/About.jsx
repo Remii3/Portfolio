@@ -15,7 +15,6 @@ const About = () => {
     "React.js",
     "Redux",
     "Next.js",
-    "TypeScript",
     "GIT",
     "Firebase",
   ];
