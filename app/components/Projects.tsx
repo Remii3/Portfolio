@@ -74,7 +74,7 @@ export default function Projects({ projects }: Props) {
           .map((project, index) => (
             <div
               key={index}
-              className="w-screen flex-shrink-0 snap-start flex flex-col space-y-5 items-center justify-start p-20 md:p44 h-screen"
+              className="w-screen flex-shrink-0 snap-start flex flex-col space-y-5 items-center justify-start p-10 sm:p-20 md:p-44"
             >
               <motion.div
                 initial={{
@@ -94,13 +94,12 @@ export default function Projects({ projects }: Props) {
                     alt="Project image"
                     className="object-cover hover:scale-[1.05] hover:skew-y-1 shadow-sm hover:shadow-lg transition-all duration-300 ease-in-out"
                     fill
-                    sizes="(max-width: 768px) 100vw, 400px"
                   />
                 </Link>
               </motion.div>
-              <div className="space-y-10 px-0 md:px-10 max-w-6xl">
+              <div className="space-y-4 sm:space-y-10 px-0 md:px-10 max-w-6xl">
                 <h4 className="text-4xl font-semibold text-center">
-                  <span className="underline decoration-[#0ea5e9]">
+                  <span className="underline decoration-[#0ea5e9] whitespace-nowrap">
                     Project {index + 1} of {projects.length}:
                   </span>{' '}
                   {project.title}

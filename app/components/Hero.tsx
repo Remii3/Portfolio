@@ -48,7 +48,7 @@ export default function Hero({ pageInfo }: Props) {
       <div className="flex flex-col mx-auto space-y-8 items-center justify-center text-center ">
         <BackgroundCircles />
         <div className="z-20">
-          <h2 className="h-8 text-base uppercase text-slate-500 pb-2 tracking-[15px]">
+          <h2 className="min-h-8 text-base uppercase text-slate-500 pb-2 tracking-[15px]">
             {text}
           </h2>
           <h1 className="text-5xl lg:text-6xl font-semibold px-10 ">

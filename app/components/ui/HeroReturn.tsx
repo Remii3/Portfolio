@@ -16,7 +16,7 @@ export default function HeroReturn({}: Props) {
       href="#hero"
       scroll={false}
       onClick={moveToHero}
-      className="fixed bottom-10 right-10 text-slate-400/50 hover:text-cyan-600/80 transition ease-out"
+      className="fixed bottom-10 right-3 text-slate-400/50 hover:text-cyan-600/80 transition ease-out"
     >
       <ArrowUpCircleIcon height={42} width={42} />
     </Link>

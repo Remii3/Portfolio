@@ -28,7 +28,6 @@ export default function SkillItem({ directionLeft, skill }: Props) {
               src={urlFor(skill?.image).url()}
               alt="Skill icon"
               fill
-              sizes="(max-width: 768px) 64px, (min-width: 769px) 94px"
               className="object-cover"
             />
           )}
