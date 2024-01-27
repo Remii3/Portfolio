@@ -1,0 +1,92 @@
+.home {
+    background-image: radial-gradient(ellipse at bottom,
+            #1b2735 0%,
+            #090a0f 100%);
+}
+
+.divider {
+    background-image: radial-gradient(ellipse at top,
+            #1b2735 0%,
+            #090a0f 100%);
+}
+
+@function multiple-box-shadow($n, $maxWidth, $maxHeight) {
+    $value: '#{random($maxWidth)}px #{random($maxHeight)}vh rgba(255, 255, 255, #{random(100) * 0.01})';
+
+    @for $i from 2 through $n {
+        $value: '#{$value}, #{random($maxWidth)}px #{random($maxHeight)}vh rgba(255, 255, 255, #{random(100) * 0.01})';
+    }
+
+    @return unquote($value);
+}
+
+$shadows-small: multiple-box-shadow(100, 3000, 300); // Smaller, more numerous stars
+$shadows-medium: multiple-box-shadow(150, 3000, 300); // Medium stars
+$shadows-big: multiple-box-shadow(200, 3000, 300); // Larger, fewer stars
+
+.stars,
+.stars2,
+.stars3 {
+    position: absolute;
+    top: -300vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+}
+
+.stars {
+    box-shadow: $shadows-small;
+    animation: animStar 100s linear infinite;
+}
+
+.stars2 {
+    box-shadow: $shadows-medium;
+    animation: animStar 200s linear infinite;
+}
+
+.stars3 {
+    box-shadow: $shadows-big;
+    animation: animStar 250s linear infinite;
+}
+
+.stars-alt {
+    animation-delay: 15s;
+}
+
+.stars-alt2 {
+    animation-delay: 30s;
+}
+
+.stars-alt3 {
+    animation-delay: 45s;
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(900vh);
+    }
+}
+
+@keyframes ping {
+    60% {
+        transform: scale(4);
+        opacity: 0;
+
+    }
+
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.animate-ping-hero {
+    animation: ping 4s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
