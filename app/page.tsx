@@ -20,22 +20,22 @@ export default async function Home() {
   const skills = await getSkills();
   const projects = await getProjects();
   return (
-    <main className="bg-gradient-to-b from-[#0F131B] to-[#161E2A] text-white h-screen snap-y snap-proximity overflow-y-scroll overflow-x-hidden scrollbar-track-black relative scrollbar-thumb-gray-600/30 scroll-smooth scrollbar-thin">
+    <main className="bg-gradient-to-b from-[#0F131B] to-[#161E2A] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scrollbar-track-black relative scrollbar-thumb-gray-600/30 scroll-smooth scrollbar-thin">
       <Header />
       <section id="hero" className="snap-start">
         <Hero pageInfo={pageInfo} />
       </section>
-      <div className="divider flex flex-col gap-8 pt-4">
-        <section id="about" className="snap-start">
+      <div className="divider flex flex-col gap-16 pt-20">
+        <section id="about" className="snap-start pt-8 pb-20">
           <About pageInfo={pageInfo} />
         </section>
-        <section id="experience" className="snap-start">
+        <section id="experience" className="snap-start pt-8 pb-20">
           <WorkExperience experiences={experiences} />
         </section>
-        <section id="projects" className="snap-start">
+        <section id="projects" className="snap-start pt-8 pb-20">
           <Projects projects={projects} />
         </section>
-        <section id="skills" className="snap-start">
+        <section id="skills" className="snap-start pt-8 pb-20">
           <Skills skills={skills} />
         </section>
         <section id="contact" className="snap-start">
