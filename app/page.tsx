@@ -25,20 +25,20 @@ export default async function Home() {
       <section id="hero" className="snap-start">
         <Hero pageInfo={pageInfo} />
       </section>
-      <div className="divider flex flex-col gap-52 space-y-52 pt-4">
-        <section id="about" className="snap-start py-8">
+      <div className="divider flex flex-col gap-4 pt-4">
+        <section id="about" className="snap-start">
           <About pageInfo={pageInfo} />
         </section>
-        <section id="experience" className="snap-start py-8">
+        <section id="experience" className="snap-start">
           <WorkExperience experiences={experiences} />
         </section>
-        <section id="projects" className="snap-start py-8">
+        <section id="projects" className="snap-start">
           <Projects projects={projects} />
         </section>
-        <section id="skills" className="snap-start py-8">
+        <section id="skills" className="snap-start">
           <Skills skills={skills} />
         </section>
-        <section id="contact" className="snap-start py-8">
+        <section id="contact" className="snap-start">
           <Contact />
         </section>
       </div>
