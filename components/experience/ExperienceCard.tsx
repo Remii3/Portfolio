@@ -11,10 +11,10 @@ type Props = {
 
 export default function ExperienceCard({ experience }: Props) {
   return (
-    <CarouselItem className="xl:basis-1/3 md:basis-1/2 flex flex-col  rounded-lg items-center space-y-7 py-10 px-4 bg-slate-800/80 opacity-40 hover:opacity-100 transition-opacity duration-200 overflow-hidden">
+    <CarouselItem className="xl:basis-1/3 md:basis-1/2 flex flex-col rounded-lg items-center gap-7 p-6 bg-slate-800/80 opacity-40 hover:opacity-100 transition-opacity duration-200">
       {experience?.companyImage && (
         <Image
-          className="rounded-2xl object-cover object-center"
+          className="hidden sm:block rounded-2xl object-cover object-center"
           src={urlFor(experience?.companyImage).url()}
           alt="Company image"
           height={128}
@@ -22,10 +22,10 @@ export default function ExperienceCard({ experience }: Props) {
         />
       )}
 
-      <div>
+      <div className="space-y-2">
         <h4 className="text-4xl font-light">{experience.jobTitle}</h4>
-        <p className="font-bold text-2xl mt-1">{experience.company}</p>
-        <div className="flex space-x-2 my-2 relative">
+        <p className="font-bold text-2xl">{experience.company}</p>
+        <div className="flex space-x-2 relative">
           {experience.technologies.map((technology) => {
             return (
               technology.image && (

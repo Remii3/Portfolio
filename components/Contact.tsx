@@ -18,7 +18,7 @@ export default function Contact({}: Props) {
   };
 
   return (
-    <div className="h-full flex flex-col max-w-7xl mx-auto justify-center gap-16 sm:gap-32">
+    <div className="h-full flex flex-col max-w-7xl mx-auto justify-start sm:justify-center gap-16 sm:gap-32">
       <div className="text-center ">
         <h2 className="uppercase tracking-widest mb-4 text-gray-500 text-2xl sm:text-4xl">
           Contact

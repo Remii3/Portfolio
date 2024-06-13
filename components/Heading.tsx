@@ -5,7 +5,7 @@ type Props = {
 
 const Heading = ({ heading, subHeading }: Props) => {
   return (
-    <div className="text-center px-8">
+    <div className="text-center px-4">
       <h2 className="uppercase tracking-widest mb-4 text-gray-500 text-2xl sm:text-4xl">
         {heading}
       </h2>

@@ -22,38 +22,23 @@ export default async function Home() {
   return (
     <main className="bg-gradient-to-b from-[#0F131B] to-[#161E2A] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scrollbar-track-black relative scrollbar-thumb-gray-600/30 scroll-smooth scrollbar-thin">
       <Header />
-      <section id="hero" className="snap-start">
+      <section id="hero" className="snap-start h-screen w-full">
         <Hero pageInfo={pageInfo} />
       </section>
       <div className="divider flex flex-col gap-32">
-        <section
-          id="about"
-          className="snap-start h-screen w-full overflow-y-scroll pt-24"
-        >
+        <section id="about" className="snap-start h-screen w-full pt-8">
           <About pageInfo={pageInfo} />
         </section>
-        <section
-          id="experience"
-          className="snap-start h-screen w-full overflow-y-scroll pt-24"
-        >
+        <section id="experience" className="snap-start h-screen w-full pt-8">
           <WorkExperience experiences={experiences} />
         </section>
-        <section
-          id="projects"
-          className="snap-start h-screen w-full overflow-y-scroll pt-16"
-        >
+        <section id="projects" className="snap-start h-screen w-full pt-8">
           <Projects projects={projects} />
         </section>
-        <section
-          id="skills"
-          className="snap-start h-screen w-full overflow-y-scroll"
-        >
+        <section id="skills" className="snap-start h-screen w-full pt-8">
           <Skills skills={skills} />
         </section>
-        <section
-          id="contact"
-          className="snap-start h-screen w-full overflow-y-scroll"
-        >
+        <section id="contact" className="snap-start h-screen w-full pt-8">
           <Contact />
         </section>
       </div>
