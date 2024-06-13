@@ -26,6 +26,8 @@ export default function Socials({ socials }: Props) {
           fgColor="gray"
           bgColor="transparent"
           className="social-icon"
+          target="_blank"
+          rel="noopener noreferrer"
         />
       ))}
     </motion.div>
