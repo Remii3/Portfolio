@@ -14,7 +14,7 @@ export default function About({ pageInfo }: Props) {
       initial={{ y: -15, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 1 }}
-      className="min-h-screen relative flex flex-col items-center justify-center gap-8 sm:gap-16"
+      className="h-full relative flex flex-col items-center justify-center gap-8 sm:gap-16"
     >
       <Heading heading="About" subHeading="Healthy Mind, Great Achievements" />
       <div className="flex flex-col gap-8 sm:gap-16 text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
@@ -43,7 +43,7 @@ export default function About({ pageInfo }: Props) {
             />
           </motion.div>
         )}
-        <div className="space-y-10">
+        <div className="space-y-10 pb-8">
           <h4 className="text-3xl sm:text-4xl font-semibold">
             Fueling{" "}
             <span className="underline decoration-[#0ea5e9]/50">Success</span>{" "}

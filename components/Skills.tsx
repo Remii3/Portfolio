@@ -14,7 +14,7 @@ export default function Skills({ skills }: Props) {
       initial={{ y: -15, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 1 }}
-      className="min-h-screen relative flex flex-col max-w-7xl mx-auto justify-center overflow-hidden gap-16 sm:gap-32"
+      className="h-full relative flex flex-col max-w-7xl mx-auto justify-center overflow-hidden gap-16 sm:gap-32"
     >
       <Heading heading="Skills" subHeading="Expertise That Drives Success" />
       <div

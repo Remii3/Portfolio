@@ -40,7 +40,7 @@ export default function Projects({ projects }: Props) {
       initial={{ y: -15, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 1 }}
-      className="min-h-screen flex flex-col justify-center relative overflow-hidden"
+      className="h-full flex flex-col justify-center relative overflow-hidden"
     >
       <div className="z-20">
         <Heading

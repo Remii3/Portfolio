@@ -25,20 +25,35 @@ export default async function Home() {
       <section id="hero" className="snap-start">
         <Hero pageInfo={pageInfo} />
       </section>
-      <div className="divider flex flex-col gap-16 pt-20">
-        <section id="about" className="snap-start pt-8 pb-20">
+      <div className="divider flex flex-col gap-32">
+        <section
+          id="about"
+          className="snap-start h-screen w-full overflow-y-scroll pt-24"
+        >
           <About pageInfo={pageInfo} />
         </section>
-        <section id="experience" className="snap-start pt-8 pb-20">
+        <section
+          id="experience"
+          className="snap-start h-screen w-full overflow-y-scroll pt-24"
+        >
           <WorkExperience experiences={experiences} />
         </section>
-        <section id="projects" className="snap-start pt-8 pb-20">
+        <section
+          id="projects"
+          className="snap-start h-screen w-full overflow-y-scroll pt-16"
+        >
           <Projects projects={projects} />
         </section>
-        <section id="skills" className="snap-start pt-8 pb-20">
+        <section
+          id="skills"
+          className="snap-start h-screen w-full overflow-y-scroll"
+        >
           <Skills skills={skills} />
         </section>
-        <section id="contact" className="snap-start">
+        <section
+          id="contact"
+          className="snap-start h-screen w-full overflow-y-scroll"
+        >
           <Contact />
         </section>
       </div>

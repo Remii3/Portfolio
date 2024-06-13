@@ -38,7 +38,7 @@ export default function WorkExperience({ experiences }: Props) {
       initial={{ y: -15, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 1 }}
-      className="min-h-screen flex flex-col max-w-7xl mx-auto gap-8 sm:gap-16 justify-center"
+      className="h-full flex flex-col max-w-7xl mx-auto gap-8 sm:gap-16 justify-center"
     >
       <Heading
         heading="Experience"
