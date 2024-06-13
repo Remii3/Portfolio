@@ -20,7 +20,7 @@ export default async function Home() {
   const skills = await getSkills();
   const projects = await getProjects();
   return (
-    <main className="bg-gradient-to-b from-[#0F131B] to-[#161E2A] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scrollbar-track-black relative scrollbar-thumb-gray-600/30 scroll-smooth scrollbar-thin">
+    <main className="bg-gradient-to-b from-[#0F131B] to-[#161E2A] text-white h-screen snap-y snap-proximity overflow-y-scroll overflow-x-hidden scrollbar-track-black relative scrollbar-thumb-gray-600/30 scroll-smooth scrollbar-thin">
       <Header />
       <section id="hero" className="snap-start">
         <Hero pageInfo={pageInfo} />
