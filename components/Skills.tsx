@@ -20,7 +20,7 @@ export default function Skills({ skills }: Props) {
       <div
         className={`grid ${
           skills.length % 4 ? "grid-cols-4" : "grid-cols-4"
-        } gap-4 mx-auto`}
+        } gap-4 mx-auto px-4 w-full`}
       >
         {skills.map((skill) => (
           <SkillItem skill={skill} key={skill._id} />

@@ -17,7 +17,7 @@ export default function About({ pageInfo }: Props) {
       className="h-full relative flex flex-col items-center justify-start sm:justify-center gap-8 sm:gap-16"
     >
       <Heading heading="About" subHeading="Healthy Mind, Great Achievements" />
-      <div className="flex flex-col gap-8 sm:gap-16 text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
+      <div className="flex flex-col gap-6 sm:gap-16 text-center md:text-left md:flex-row max-w-7xl px-8 sm:px-10 justify-evenly mx-auto items-center">
         {pageInfo?.profilePic && (
           <motion.div
             initial={{
@@ -43,13 +43,13 @@ export default function About({ pageInfo }: Props) {
             />
           </motion.div>
         )}
-        <div className="space-y-5 sm:space-y-10 pb-8">
+        <div className="space-y-4 sm:space-y-10 pb-8">
           <h4 className="text-2xl sm:text-4xl font-semibold">
             Fueling{" "}
             <span className="underline decoration-[#0ea5e9]/50">Success</span>{" "}
             with Learning and Wellness
           </h4>
-          <p className="text-base text-left">
+          <p className="text-base text-pretty">
             {pageInfo?.backgroundInformation}
           </p>
         </div>

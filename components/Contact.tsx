@@ -2,6 +2,7 @@
 import React from "react";
 import { PaperAirplaneIcon } from "@heroicons/react/24/solid";
 import { useForm, SubmitHandler } from "react-hook-form";
+import Heading from "./Heading";
 type Props = {};
 
 type Inputs = {
@@ -19,17 +20,13 @@ export default function Contact({}: Props) {
 
   return (
     <div className="h-full flex flex-col max-w-7xl mx-auto justify-start sm:justify-center gap-16 sm:gap-32">
-      <div className="text-center ">
-        <h2 className="uppercase tracking-widest mb-4 text-gray-500 text-2xl sm:text-4xl">
-          Contact
-        </h2>
-        <h3 className="tracking-[3px] text-gray-500 text-sm text-center">
-          I have got just what you need.
-        </h3>
-      </div>
+      <Heading heading="Contact" subHeading="I have got just what you need." />
       <div className="flex flex-col items-center justify-center">
-        <form onSubmit={handleSubmit(onSubmit)} className="text-slate-200">
-          <div className="flex flex-col space-y-4 w-fit mx-auto">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="text-slate-200 w-full px-4"
+        >
+          <div className="flex flex-col space-y-4 w-full sm:w-fit mx-auto">
             <div className="flex flex-col sm:flex-row gap-4">
               <input
                 {...register("name")}
