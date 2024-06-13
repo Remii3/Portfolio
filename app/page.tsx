@@ -26,19 +26,19 @@ export default async function Home() {
         <Hero pageInfo={pageInfo} />
       </section>
       <div className="divider flex flex-col gap-52 space-y-52 pt-4">
-        <section id="about" className="snap-center">
+        <section id="about" className="snap-start py-8">
           <About pageInfo={pageInfo} />
         </section>
-        <section id="experience" className="snap-center">
+        <section id="experience" className="snap-start py-8">
           <WorkExperience experiences={experiences} />
         </section>
-        <section id="projects" className="snap-start">
+        <section id="projects" className="snap-start py-8">
           <Projects projects={projects} />
         </section>
-        <section id="skills" className="snap-start">
+        <section id="skills" className="snap-start py-8">
           <Skills skills={skills} />
         </section>
-        <section id="contact" className="snap-start">
+        <section id="contact" className="snap-start py-8">
           <Contact />
         </section>
       </div>
