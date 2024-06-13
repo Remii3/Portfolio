@@ -1,18 +1,18 @@
-import Header from './components/Header';
+import Header from "@/components/Header";
 import {
   getExperiences,
   getPageInfo,
   getProjects,
   getSkills,
-} from './lib/data';
-import About from './components/About';
-import Hero from './components/Hero';
-import Contact from './components/Contact';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import WorkExperience from './components/WorkExperience';
-import './animations.scss';
-import HeroReturn from './components/ui/HeroReturn';
+} from "../lib/data";
+import About from "@/components/About";
+import Hero from "@/components/Hero";
+import Contact from "@/components/Contact";
+import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
+import WorkExperience from "@/components/WorkExperience";
+import "./animations.scss";
+import HeroReturn from "@/components/HeroReturn";
 
 export default async function Home() {
   const pageInfo = await getPageInfo();
@@ -25,7 +25,7 @@ export default async function Home() {
       <section id="hero" className="snap-start">
         <Hero pageInfo={pageInfo} />
       </section>
-      <div className="divider space-y-4 pt-4">
+      <div className="divider flex flex-col gap-52 space-y-52 pt-4">
         <section id="about" className="snap-center">
           <About pageInfo={pageInfo} />
         </section>
