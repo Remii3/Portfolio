@@ -26,7 +26,7 @@ export default async function Home() {
         <Hero pageInfo={pageInfo} />
       </section>
       <div className="divider flex flex-col gap-4 pt-4">
-        <section id="about" className="snap-start pt-8">
+        <section id="about" className="snap-start pt-16">
           <About pageInfo={pageInfo} />
         </section>
         <section id="experience" className="snap-start pt-8">
