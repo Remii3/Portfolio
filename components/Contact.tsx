@@ -24,7 +24,7 @@ export default function Contact({}: Props) {
       <div className="flex flex-col items-center justify-center">
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="text-slate-200 w-full px-4"
+          className="text-slate-200 w-full sm:w-fit px-4"
         >
           <div className="flex flex-col space-y-4 w-full sm:w-fit mx-auto">
             <div className="flex flex-col sm:flex-row gap-4">
